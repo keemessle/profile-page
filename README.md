@@ -32,31 +32,36 @@
 ✅ 싱글 페이지 구성
   * 새 창 없이 스크롤로 화면을 전환하는 싱글 페이지 웹사이트(SPA)
   *  home, about, project, contact 총 4개의 섹션으로 구성
-  *  시맨틱 태그(header, main, footer 등)를 활용한 HTML 구조
+  *  시맨틱 태그(header, main, footer 등)를 활용한 HTML 구조 <br>
+  
 ✅ 부드러운 스크롤 이동
   * scroll-behavior: smooth 속성을 활용해 자연스러운 화면 전환
-  * 메뉴 클릭 시 해당 섹션으로 스크롤 이동되도록 구현
+  * 메뉴 클릭 시 해당 섹션으로 스크롤 이동되도록 구현  <br>
+  
 ✅ Home - 타이핑 애니메이션
   * 텍스트가 한 글자씩 나타나는 타이핑 효과
   * JavaScript로 구현:
     * DOM 조작: document.querySelector, innerHTML
     * 문자열 인덱싱: text[textIdx++]
     * 반복 실행: setInterval
-    * 조건 분기 및 초기화
+    * 조건 분기 및 초기화  <br>
+    
 ✅ About - 스크롤 애니메이션
   * 스크롤에 반응하여 카드가 슬라이딩 되는 애니메이션 효과
   * 구현 방식:
     * JavaScript scroll 이벤트 감지: window.addEventListener("scroll", ...)
     * CSS @keyframes 애니메이션
     * DOM 조작: element.style.animation
-    * 스크롤 위치 값에 따라 등장/사라짐 제어
+    * 스크롤 위치 값에 따라 등장/사라짐 제어  <br>
+    
 ✅ Project - 커스텀 슬라이드
   * 프로젝트를 슬라이드 형태로 보여주는 커스텀 멀티 슬라이더
   * JavaScript로 구현:
     * DOM 선택: querySelector, querySelectorAll
     * 동적 스타일 조작: element.style.left
     * 인덱스 기반 슬라이드 계산: (슬라이드 너비 + 마진) * 인덱스
-    * 좌/우 버튼 제어, 순환 기능
+    * 좌/우 버튼 제어, 순환 기능  <br>
+    
 ✅ Contact - 섹션 등장 애니메이션
   * 스크롤 시 텍스트가 위로 올라오며 등장하는 슬라이딩 애니메이션
   * About 섹션과 동일한 방식의 JavaScript + CSS 조합 애니메이션
