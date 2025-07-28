@@ -1,160 +1,193 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <title>Jot</title>
-    <link rel="shortcut icon" href="images/pencil.ico">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>YESEUL✨</title>
+    <link rel="shortcut icon" href="images/pencil.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 수정할 점 : 
+     1. 버튼을 span 태그를 쓴 점
+     2. 제목과 메뉴가 사라지지 않는 점
+     3. 프로젝트 설명 페이지 p 태그 말고 다른 태그로 바꾸기 
+     4. HELLO 타이핑 효과 h1 태그 바꾸기 
+     -->
+    <!-- 홈페이지 제목과 메뉴 -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
+      <h1>Yeseul's portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- main 페이지 -->
     <main class="container">
-        <section id="home">
-            <div class="title">
-                <h1></h1>
-                <p>안녕하세요, 저는 다재다능한 개발자를 꿈꾸는 김예슬입니다!</p>
-            </div>
-            <div class="scroll">
-                <a href="#about"><span></span></a>
-                <p>scroll</p>
-            </div>
-        </section>
+      <!-- 홈 페이지 : 인사말, 스크롤 모양 -->
+      <section id="home">
+        <h2 class="sr-only">home</h2>
+        <div class="title">
+          <p class="typing"></p>
+          <p>안녕하세요, 저는 프론트엔드 개발자가 되고 싶은 김예슬입니다!</p>
+        </div>
+        <div class="scroll">
+          <a href="#about"><span></span></a>
+          <p>scroll</p>
+        </div>
+      </section>
 
+      <!-- 자기소개 페이지 -->
+      <section id="about">
+        <div class="category">
+          <h2>about</h2>
+        </div>
+        <div class="about_profile">
+          <div class="introduction_left">
+            <div class="img_box">
+              <img src="images/profile.png" alt="예슬 사진" />
+            </div>
+            <ul class="desc_box">
+              <li>
+                <p>김예슬</p>
+                <p>이름</p>
+              </li>
+              <li>
+                <p>1997.05.31</p>
+                <p>생년월일</p>
+              </li>
+              <li>
+                <p>경기도</p>
+                <p>거주지</p>
+              </li>
+            </ul>
+          </div>
+          <div class="introduction_right">
+            <ul class="skill_box">
+              <li>🎓 한양여자대학교 실무영어과 졸업</li>
+              <li>🎓 서경대학교 소프트웨어학과 졸업</li>
+              <li>
+                🖥️ 기술 스택 : C, Python, Java, Javascript, <br />
+                JSP, Springboot, React, fastApi
+              </li>
+              <li>📝 자격증 : 정보처리기사 필기</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section id="about">
-            <div class="category">
-                <h2>about</h2>
-            </div>
-            <div class="about_profile">
-                <div class="introduction_left">
-                    <div class="img_box">
-                        <img src="images/profile.png" alt="프로필 사진">
-                    </div>
-                    <ul class="desc_box">
-                        <li>
-                            <p>김예슬</p>
-                            <p>이름</p>
-                        </li>
-                        <li>
-                            <p>1997.05.31</p>
-                            <p>생년월일</p>
-                        </li>
-                        <li>
-                            <p>경기도 고양시</p>
-                            <p>거주지</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="introduction_right">
-                    <ul class="skill_box">
-                        <li>🎓 한양여자대학교 실무영어과 졸업</li>
-                        <li>🎓 서경대학교 소프트웨어학과 졸업</li>
-                        <li>🖥️ 기술 스택 : C, Python, Java, Javascript, <br>
-                            JSP, Springboot, React, fastApi
-                        </li>
-                        <li>📝 자격증 : 정보처리기사 필기</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <!-- 프로젝트 소개 페이지 -->
+      <section id="project">
+        <div class="category">
+          <h2>My Project</h2>
+        </div>
+        <div class="slide_wrap">
+          <ul class="slides">
+            <li>
+              <div class="slide_img_box">
+                <img src="images/project1.png" alt="프로젝트1" />
+              </div>
+              <div class="slide_text_box">
+                <span>01</span>
+                <p class="title">자기소개 페이지</p>
+                <p class="desc">
+                  HTML, CSS, JavaScript만 사용하여 <br />
+                  동적 웹페이지를 제작하는 프로젝트. HTML로 기본 레이아웃을
+                  구성하고, JavaScript로 활용해 동작을 구현하고, CSS를 통해
+                  깔끔한 디자인으로 스타일링.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="slide_img_box">
+                <img src="images/project2.png" alt="프로젝트2" />
+              </div>
+              <div class="slide_text_box">
+                <span>02</span>
+                <p class="title">사진 앨범</p>
+                <p class="desc">
+                  파이썬 OpenCV 라이브러리를 활용하여 스마트 사진 앨범을
+                  제작하는 프로젝트. <br />
+                  이미지 합성, 편집 및 필터링과 같은 다양한 이미지 처리를
+                  활용하여 기존 앨범과는 다른 기능을 사용할 수 있음.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="slide_img_box">
+                <img src="images/project3.png" alt="프로젝트3" />
+              </div>
+              <div class="slide_text_box">
+                <span>03</span>
+                <p class="title">온라인 교육 플랫폼</p>
+                <p class="desc">
+                  JSP 활용하여 온라인 교육 플랫폼을 제작. <br />
+                  회원 정보를 데이터베이스에 등록해 권한이 있는 사용자만 사이트
+                  기능을 이용할 수 있도록 제한, 강의 등록 및 수강 중인 강의의
+                  진행률 확인, 게시판 기능.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="slide_img_box">
+                <img src="images/project4.png" alt="프로젝트4" />
+              </div>
+              <div class="slide_text_box">
+                <span>04</span>
+                <p class="title">웰니스 트렌드 분석 사이트</p>
+                <p class="desc">
+                  네이버 API를 활용하여 건강 트렌드를 실시간으로 수집, 분석하여
+                  시각화된 데이터 대시보드 및 소셜 반응 제공. 게시판을 제공하며,
+                  사용자 간 소통을 위한 게시판 기능 제공.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="controls">
+          <button class="prev">◀️</button>
+          <button class="next">▶️</button>
+        </div>
+      </section>
 
-        <section id="project">
-            <div class="category">
-                <h2>My Project</h2>
-            </div>
-            <div class="slide_wrap">
-                <ul class="slides">
-                    <li>
-                        <div class="slide_img_box">
-                            <img src="images/project1.png" alt="프로젝트1">
-                        </div>
-                        <div class="slide_text_box">
-                            <span>01</span>
-                            <p class="title">자기소개 페이지</p>
-                            <p class="desc">
-                                HTML, CSS, JavaScript만 사용하여 <br> 동적 웹페이지를 제작하는 프로젝트. HTML로 기본 레이아웃을 구성하고, JavaScript로 활용해 동작을 구현하고, CSS를 통해 깔끔한 디자인으로 스타일링.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="slide_img_box">
-                            <img src="images/project2.png" alt="프로젝트2">
-                        </div>
-                        <div class="slide_text_box">
-                            <span>02</span>
-                            <p class="title">사진 앨범</p>
-                            <p class="desc">
-                                파이썬 OpenCV 라이브러리를 활용하여 스마트 사진 앨범을 제작하는 프로젝트. <br> 이미지 합성, 편집 및 필터링과 같은 다양한 이미지 처리를 활용하여 기존 앨범과는 다른 기능을 사용할 수 있음.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="slide_img_box">
-                            <img src="images/project3.png" alt="프로젝트3">
-                        </div>
-                        <div class="slide_text_box">
-                            <span>03</span>
-                            <p class="title">온라인 교육 플랫폼</p>
-                            <p class="desc">
-                                JSP 활용하여 온라인 교육 플랫폼을 제작. <br> 회원 정보를 데이터베이스에 등록해 권한이 있는 사용자만 사이트 기능을 이용할 수 있도록 제한, 강의 등록 및 수강 중인 강의의 진행률 확인, 게시판 기능.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="slide_img_box">
-                            <img src="images/project4.png" alt="프로젝트4">
-                        </div>
-                        <div class="slide_text_box">
-                            <span>04</span>
-                            <p class="title">웰니스 트렌드 분석 사이트</p>
-                            <p class="desc">
-                                네이버 API를 활용하여 건강 트렌드를 실시간으로 수집, 분석하여 시각화된 데이터 대시보드 및 소셜 반응 제공. 게시판을 제공하며, 사용자 간 소통을 위한 게시판 기능 제공.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="controls">
-                <span class="prev">◀️</span>
-                <span class="next">▶️</span>
-            </div>
-        </section>
-            
-        <section id="contact">
-            <div class="category">
-                <h2>contact</h2>
-            </div>
-            <div class="link">
-                <ul>
-                    <li><a href="" target="_blank">Instagram</a></li>
-                    <li><a href="https://github.com/keemessle" target="_blank">Github</a></li>
-                    <li><a href="https://www.notion.so/Team-Project-121611acf2e0809f8e42e18c8b28ddf2?pvs=4" target="_blank">Notion</a></li>
-                </ul>
-            </div>
-        </section>
+      <!-- 연락처 페이지 -->
+      <section id="contact">
+        <div class="category">
+          <h2>contact</h2>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="" target="_blank">Instagram</a></li>
+            <li>
+              <a href="https://github.com/keemessle" target="_blank">Github</a>
+            </li>
+            <li>
+              <a
+                href="https://www.notion.so/Team-Project-121611acf2e0809f8e42e18c8b28ddf2?pvs=4"
+                target="_blank"
+                >Notion</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <ul>
-            <li><p>Copyright&copy; 2023 All rights reserved by Yes.</p></li>
-            <li>
-                <a href="mailto:dptmfl3018@skuniv.ac.kr" target="_top">
-                    📧 Mail me : dptmfl3018@skuniv.ac.kr
-                </a>
-            </li>
-        </ul>
+      <ul>
+        <li><p>Copyright&copy; 2023 All rights reserved by Yes.</p></li>
+        <li>
+          <a href="mailto:dptmfl3018@skuniv.ac.kr" target="_top">
+            📧 Mail me : dptmfl3018@skuniv.ac.kr
+          </a>
+        </li>
+      </ul>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
